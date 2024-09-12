@@ -48,7 +48,7 @@ $font-family-sans-serif: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI"
 // ...
 
 // Override semantic colors here
-$primary:   #43515f;  // Gray
+$primary:   #4F4B4E;  // Gray
 $secondary: #495057;  // As Bootstrap $gray-700
 $success:   #92c642;  // Lime
 $info:      #1e6f90;  // Light blue
@@ -68,14 +68,14 @@ $theme-colors: (
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold: 170;
 
-$body-color: #343a40;       // As Bootstrap $gray-800
+$body-color: #4F4B4E;       // As Bootstrap $gray-800
 
-$link-color: #1e6f90;       // Blue green, as DSpace $info
+$link-color: #2A3C79;       // Blue green, as DSpace $info
 $link-decoration: none;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
 
-$table-accent-bg: #f8f9fa;  // As Bootstrap $gray-100
+$table-accent-bg: #2A3C79;  // As Bootstrap $gray-100
 $table-hover-bg: #ced4da;   // As Bootstrap $gray-400
 
 $navbar-dark-color: #fff;
@@ -83,8 +83,8 @@ $navbar-dark-color: #fff;
 
 /*** CUSTOM DSPACE VARIABLES ***/
 
-$ds-home-news-link-color: #92c642;
-$ds-header-navbar-border-bottom-color: #92c642;
+$ds-home-news-link-color: #2A3C79;
+$ds-header-navbar-border-bottom-color: #ff005f;
 
-$ds-breadcrumb-link-color: #154E66 !default;
-$ds-breadcrumb-link-active-color: #040D11 !default;
+$ds-breadcrumb-link-color: #2A3C79 !default;
+$ds-breadcrumb-link-active-color: #4F4B4E !default;
