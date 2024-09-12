@@ -39,7 +39,7 @@ export class FooterComponent implements OnInit {
   /**
    * A boolean representing if to show or not the top footer container
    */
-  showTopFooter = false;
+  showTopFooter = true;
   showPrivacyPolicy: boolean;
   showEndUserAgreement: boolean;
   showSendFeedback$: Observable<boolean>;
