@@ -1,0 +1,16 @@
+{
+    "apps": [
+        {
+           "name": "dspace-ui",
+           "cwd": "/home/dspace/dspace-angular-dspace-8.0/",
+           "script": "dist/server/main.js",
+           "env": {
+              "NODE_ENV": "production",
+   "DSPACE_REST_SSL": "true",
+   "DSPACE_REST_HOST": "dspace.tplearn.edu.sl",
+   "DSPACE_REST_PORT": "443",
+   "DSPACE_REST_NAMESPACE": "/server"
+           }
+        }
+    ]
+}
