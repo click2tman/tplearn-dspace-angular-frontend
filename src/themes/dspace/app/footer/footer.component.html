@@ -1,36 +1,122 @@
-<div id="bottom" class="cmsmasters_color_scheme_first">
-		<div class="bottom_bg">
-			<div class="bottom_outer">
-				<div class="bottom_inner sidebar_layout_14141414">
-	<aside id="text-5" class="widget widget_text"><h3 class="widgettitle">Navigation</h3>			<div class="textwidget"><ul>
-<li><a href="#">USL Overview</a></li>
-<li><a href="#">Our Values</a></li>
-<li><a href="#">Governance</a></li>
-<li><a href="#">Campus Locations</a></li>
-<li><a href="#">Partners</a></li>
-</ul>
-</div>
-		</aside><aside id="text-6" class="widget widget_text"><h3 class="widgettitle">Academics</h3>			<div class="textwidget"><ul>
-  <li><a href="#">Short Courses</a></li>
-  <li><a href="#">USL Prospectus</a></li>
-  <li><a href="#">Tuition &amp; Fees</a></li>
-  <li><a href="https://usl.edu.sl/call-for-application-phd-scholarship/" target="_blank" rel="noopener">Scholarships</a></li>
-  <li><a href="#">Academic Calendar</a></li>
-</ul></div>
-		</aside><aside id="text-7" class="widget widget_text"><h3 class="widgettitle">Socials</h3>			<div class="textwidget"><ul>
-<li><a href="#">Facebook</a></li>
-<li><a href="#">Twitter</a></li>
-<li><a href="#">YouTube</a></li>
-<li><a href="#">Instagram</a></li>
-<li><a href="#">LinkedIn</a></li>
-</ul>
-</div>
-		</aside><aside id="text-8" class="widget widget_text">			<div class="textwidget"><p><img decoding="async" class="" src="https://usl.edu.sl/ipam/wp-content/uploads/2024/05/NEW-IPAM-LOGO.png" alt="University of Sierra Leone Logo" width="168" height="116"></p>
-<p>A.J. Momoh Drive, Tower Hill, Freetown, Sierra Leone.</p>
-<p>Phone: +232 30 747108<br>
-Email: registry&#64;usl.edu.sl</p>
-</div>
-		</aside>				</div>
-			</div>
-		</div>
-	</div>
+<footer class="text-lg-start">
+  <div *ngIf="showTopFooter" class="top-footer">
+    <!-- Grid container -->
+    <div class=" container p-4">
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase">Navigation</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a routerLink="./" class="">USL Overview</a>
+            </li>
+            <li>
+              <a routerLink="./" class="">Our Values</a>
+            </li>
+            <li>
+              <a routerLink="./" class="">Governance</a>
+            </li>
+            </li>
+              <a routerLink="./" class="">Campus Locations</a>
+            </li>
+          </li>
+          <a routerLink="./" class="">Partners</a>
+        </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase">Academics</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a routerLink="./" class="">Short Courses</a>
+            </li>
+            <li>
+              <a routerLink="./" class="">USL Prospectus</a>
+            </li>
+            <li>
+              <a routerLink="./" class="">Tuition &amp; Fees</a>
+            </li>
+            </li>
+              <a routerLink="./" class="">Scholarships</a>
+            </li>
+          </li>
+          <a routerLink="./" class="">Academic Calendar</a>
+        </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Sociala</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a routerLink="./" class="">Facebook</a>
+            </li>
+            <li>
+              <a routerLink="./" class="">Twitter</a>
+            </li>
+            <li>
+              <a routerLink="./" class="">YouTube</a>
+            </li>
+            </li>
+              <a routerLink="./" class="">Instagram</a>
+            </li>
+          </li>
+          <a routerLink="./" class="">LinkedIn</a>
+        </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="bottom-footer p-1 d-flex justify-content-center align-items-center text-white">
+    <div class="content-container">
+      <p class="m-0">
+        <a class="text-white"
+           href="http://www.dspace.org/">{{ 'footer.link.dspace' | translate}}</a>
+        {{ 'footer.copyright' | translate:{year: dateObj | date:'y'} }}
+        <a class="text-white"
+           href="https://www.lyrasis.org/">{{ 'footer.link.lyrasis' | translate}}</a>
+      </p>
+      <ul class="footer-info list-unstyled d-flex justify-content-center mb-0">
+        <li>
+          <button class="btn btn-link text-white" type="button" (click)="showCookieSettings()">
+            {{ 'footer.link.cookies' | translate}}
+          </button>
+        </li>
+        <li *ngIf="showPrivacyPolicy">
+          <a class="btn text-white"
+             routerLink="info/privacy">{{ 'footer.link.privacy-policy' | translate}}</a>
+        </li>
+        <li *ngIf="showEndUserAgreement">
+          <a class="btn text-white"
+             routerLink="info/end-user-agreement">{{ 'footer.link.end-user-agreement' | translate}}</a>
+        </li>
+        <li *ngIf="showSendFeedback$ | async">
+          <a class="btn text-white"
+             routerLink="info/feedback">{{ 'footer.link.feedback' | translate}}</a>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="coarLdnEnabled$ | async" class="notify-enabled text-white">
+      <a class="coar-notify-support-route" routerLink="info/coar-notify-support">
+        <img class="n-coar" src="assets/images/n-coar.svg" [attr.alt]="'menu.header.image.logo' | translate" />
+        {{ 'footer.link.coar-notify-support' | translate }}
+      </a>
+    </div>
+  </div>
+  <!-- Copyright -->
+</footer>
