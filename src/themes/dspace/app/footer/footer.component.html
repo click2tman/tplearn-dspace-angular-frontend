@@ -54,35 +54,34 @@
     <div class="content-container">
       <p class="m-0">
         <a class="text-white"
-           href="http://www.dspace.org/">{{ 'footer.link.dspace' }}</a>
-        {{ 'footer.copyright' {year: dateObj | date:'y'} }}
+           href="#">USL</a> 2024
         <a class="text-white"
-           href="https://www.lyrasis.org/">{{ 'footer.link.lyrasis' }}</a>
+           href="#">{{ 'footer.link.lyrasis' }}</a>
       </p>
       <ul class="footer-info list-unstyled d-flex justify-content-center mb-0">
         <li>
           <button class="btn btn-link text-white" type="button" (click)="showCookieSettings()">
-            {{ 'footer.link.cookies' }}
+            Cookie Settings
           </button>
         </li>
         <li *ngIf="showPrivacyPolicy">
           <a class="btn text-white"
-             routerLink="info/privacy">{{ 'footer.link.privacy-policy' }}</a>
+             routerLink="info/privacy">Privacy Policy</a>
         </li>
         <li *ngIf="showEndUserAgreement">
           <a class="btn text-white"
-             routerLink="info/end-user-agreement">{{ 'footer.link.end-user-agreement' }}</a>
+             routerLink="info/end-user-agreement">User Agreement</a>
         </li>
-        <li *ngIf="showSendFeedback$ | async">
+        <li *ngIf="showSendFeedback$">
           <a class="btn text-white"
-             routerLink="info/feedback">{{ 'footer.link.feedback' }}</a>
+             routerLink="info/feedback">User Feedback</a>
         </li>
       </ul>
     </div>
-    <div *ngIf="coarLdnEnabled$ | async" class="notify-enabled text-white">
+    <div *ngIf="coarLdnEnabled$" class="notify-enabled text-white">
       <a class="coar-notify-support-route" routerLink="info/coar-notify-support">
         <img class="n-coar" src="assets/images/n-coar.svg" [attr.alt]="'menu.header.image.logo'" />
-        {{ 'footer.link.coar-notify-support' }}
+        Notify Support
       </a>
     </div>
   </div>
