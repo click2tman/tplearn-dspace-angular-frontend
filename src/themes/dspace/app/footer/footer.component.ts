@@ -1,7 +1,7 @@
 //import {
-//  AsyncPipe,
-//  DatePipe,
-//  NgIf,
+ // AsyncPipe,
+ // DatePipe,
+ // NgIf,
 //} from '@angular/common';
 import { Component } from '@angular/core';
 //import { RouterLink } from '@angular/router';
@@ -11,11 +11,11 @@ import { FooterComponent as BaseComponent } from '../../../../app/footer/footer.
 
 @Component({
   selector: 'ds-footer',
-  styleUrls: ['/home/dspace/dspace-angular-dspace-8.0/src/themes/dspace/app/footer/footer.component.scss'],
+  styleUrls: ['footer.component.scss'],
   //styleUrls: ['../../../../app/footer/footer.component.scss'],
-  templateUrl: '/home/dspace/dspace-angular-dspace-8.0/src/themes/dspace/app/footer/footer.component.html'
+  templateUrl: 'footer.component.html'
   //templateUrl: '../../../../app/footer/footer.component.html',
-  //standalone: true,
+  standalone: true,
   //imports: [NgIf, RouterLink, AsyncPipe, DatePipe, TranslateModule],
 })
 export class FooterComponent extends BaseComponent {
