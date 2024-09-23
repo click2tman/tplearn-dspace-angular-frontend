@@ -70,12 +70,12 @@ $yiq-contrasted-threshold: 170;
 
 $body-color: #4F4B4E;       // As Bootstrap $gray-800
 
-$link-color: #ff005f;       // Blue green, as DSpace $info
+$link-color: #10700e;       // Blue green, as DSpace $info
 $link-decoration: none;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
 
-$table-accent-bg: #2A3C79;  // As Bootstrap $gray-100
+$table-accent-bg: #f0f0f3;  // As Bootstrap $gray-100
 $table-hover-bg: #ced4da;   // As Bootstrap $gray-400
 
 $navbar-dark-color: #fff;
@@ -83,8 +83,8 @@ $navbar-dark-color: #fff;
 
 /*** CUSTOM DSPACE VARIABLES ***/
 
-$ds-home-news-link-color: #ff005f;
-$ds-header-navbar-border-bottom-color: #ff005f;
+$ds-home-news-link-color: #10700e;
+$ds-header-navbar-border-bottom-color: #10700e;
 
-$ds-breadcrumb-link-color: #ff005f !default;
+$ds-breadcrumb-link-color: #10700e !default;
 $ds-breadcrumb-link-active-color: #4F4B4E !default;
