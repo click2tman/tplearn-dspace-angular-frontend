@@ -11,9 +11,9 @@ import { FooterComponent as BaseComponent } from '../../../../app/footer/footer.
 
 @Component({
   selector: 'ds-footer',
-  styleUrls: ['footer.component.scss'],
+  styleUrls: ['/home/dspace/dspace-angular-dspace-8.0/src/themes/dspace/app/footer/footer.component.scss'],
   //styleUrls: ['../../../../app/footer/footer.component.scss'],
-  templateUrl: 'footer.component.html'
+  templateUrl: '/home/dspace/dspace-angular-dspace-8.0/src/themes/dspace/app/footer/footer.component.html'
   //templateUrl: '../../../../app/footer/footer.component.html',
   //standalone: true,
   //imports: [NgIf, RouterLink, AsyncPipe, DatePipe, TranslateModule],
