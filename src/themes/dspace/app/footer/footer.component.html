@@ -1,5 +1,5 @@
 <footer class="text-lg-start">
-  <div *ngIf="showTopFooter" class="top-footer">
+  <div class="top-footer">
     <!-- Grid container -->
     <div class=" container p-4">
       <!--Grid row-->
@@ -64,21 +64,21 @@
             Cookie Settings
           </button>
         </li>
-        <li *ngIf="showPrivacyPolicy">
+        <li>
           <a class="btn text-white"
              routerLink="info/privacy">Privacy Policy</a>
         </li>
-        <li *ngIf="showEndUserAgreement">
+        <li>
           <a class="btn text-white"
              routerLink="info/end-user-agreement">User Agreement</a>
         </li>
-        <li *ngIf="showSendFeedback$">
+        <li>
           <a class="btn text-white"
              routerLink="info/feedback">User Feedback</a>
         </li>
       </ul>
     </div>
-    <div *ngIf="coarLdnEnabled$" class="notify-enabled text-white">
+    <div class="notify-enabled text-white">
       <a class="coar-notify-support-route" routerLink="info/coar-notify-support">
         <img class="n-coar" src="assets/images/n-coar.svg" [attr.alt]="'menu.header.image.logo'" />
         Notify Support
